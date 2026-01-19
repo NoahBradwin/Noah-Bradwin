@@ -13,7 +13,7 @@ function Projects() {
       title: "Personal Portfolio Website",
       description: "Engineered a high-performance single-page application using React and Vite to master modular component architecture. Containerized the development environment with Docker to ensure consistent cross-platform deployment and build reliability.",
       tech: ["React", "Vite", "CSS3", "JavaScript", "UX/UI Design"],
-      link: "https://github.com/NoahBradwin/Portfolio"
+      link: "https://github.com/NoahBradwin/Noah-Bradwin"
     },
   ];
 
