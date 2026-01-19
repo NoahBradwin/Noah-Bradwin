@@ -2,6 +2,11 @@
 import React from 'react';
 import './About.css';
 
+import iconData from './assets/icons/data.png';
+import iconSystems from './assets/icons/systems.png';
+import iconMath from './assets/icons/math.png';
+import iconProduct from './assets/icons/product.png';
+
 function About() {
   return (
     <div className="about-wrapper">
@@ -24,25 +29,33 @@ function About() {
         <div className="skills-grid">
 
           <div className="skill-card">
-            <div className="icon">📊</div>
+            <div className="icon-wrapper">
+              <img src={iconData} alt="Data Analysis" className="skill-icon" />
+            </div>
             <h3>Data Analysis</h3>
             <p>Transforming complex datasets into clear insights using <strong>Python</strong>, <strong>Pandas</strong>, and <strong>SQL</strong> to drive decision-making.</p>
           </div>
 
           <div className="skill-card">
-            <div className="icon">⚙️</div>
+            <div className="icon-wrapper">
+              <img src={iconSystems} alt="Systems Design" className="skill-icon" />
+            </div>
             <h3>Systems Design</h3>
             <p>Optimizing logistics and financial workflows with scalable <strong>PostgreSQL</strong> databases and <strong>VBA</strong> automation.</p>
           </div>
 
           <div className="skill-card">
-            <div className="icon">🧠</div>
+            <div className="icon-wrapper">
+              <img src={iconMath} alt="Optimization" className="skill-icon" />
+            </div>
             <h3>Optimization</h3>
             <p>Applying <strong>Linear Algebra</strong> and <strong>Calculus</strong> to model real-world constraints and solve complex efficiency problems.</p>
           </div>
 
           <div className="skill-card">
-            <div className="icon">🚀</div>
+            <div className="icon-wrapper">
+              <img src={iconProduct} alt="Product Development" className="skill-icon" />
+            </div>
             <h3>Product Dev</h3>
             <p>Bridging the gap between engineering and user experience with <strong>React</strong>, <strong>Figma</strong>, and <strong>Interactive Prototyping</strong>.</p>
           </div>
