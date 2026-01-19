@@ -1,0 +1,144 @@
+/* src/Education.css */
+.edu-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #222;
+  font-weight: 800;
+}
+
+.edu-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  border-color: var(--primary-blue);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+}
+
+.edu-school-info h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.degree-text {
+  font-size: 1.2rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.edu-meta {
+  text-align: right;
+  color: #666;
+  font-size: 1rem;
+}
+
+.edu-date, .edu-location {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.gpa-container {
+  margin-bottom: 2rem;
+}
+
+.gpa-badge {
+  background-color: #e6f0ff; 
+  color: var(--primary-blue);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-weight: 700;
+  border: 1px solid var(--primary-blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.star-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--primary-blue); 
+}
+
+.edu-details {
+  margin-bottom: 1.5rem;
+}
+
+.edu-details h4 {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.detail-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.detail-list li::before {
+  content: "•";
+  color: var(--primary-blue);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.course-tag {
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .edu-header {
+    flex-direction: column;
+  }
+  .edu-meta {
+    text-align: left;
+    margin-top: 1rem;
+  }
+}

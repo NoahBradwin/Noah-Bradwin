@@ -1,0 +1,127 @@
+/* src/Contact.css */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #222;
+  font-weight: 800;
+  text-align: center;
+}
+
+.contact-card {
+  background: white;
+  width: 100%;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.contact-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.contact-intro strong {
+  color: var(--primary-blue);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-row:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary-blue);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1);
+  background-color: #f8fbff;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  color: #444;
+  transition: background 0.3s;
+}
+
+.contact-row:hover .icon-box {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.row-text {
+  flex-grow: 1;
+}
+
+.row-text h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.row-text span {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 4px;
+  display: block;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #ddd;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-row:hover .arrow {
+  color: var(--primary-blue);
+  transform: translateX(5px);
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 1.5rem;
+  }
+  
+  .contact-row {
+    padding: 1rem;
+  }
+  
+  .row-text span {
+    font-size: 0.85rem;
+  }
+}
